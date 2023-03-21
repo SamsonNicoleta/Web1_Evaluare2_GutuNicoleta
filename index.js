@@ -70,3 +70,16 @@ console.log(workerNou.getHours()); // afișează 176
 console.log(workerNou.getSalary()); //afișează 1760 = 10*176
 workerNou.increaseHourRate(2); //mărește hourRate cu 2
 console.log(workerNou.getSalary()); //afișează 2112 = 12*176
+
+//Exercitiul 6
+console.log("Exercitiul 6")
+var workerNou2 = new Worker('Ion', 'Creangă', 10, 176);
+console.log(workerNou2.getName()); // afișează Ion
+console.log(workerNou2.getSurname()); // afișează Creangă
+console.log(workerNou2.getHourRate()); // afișează 10
+console.log(workerNou2.getHours()); // afișează 176
+console.log(workerNou2.getSalary()); //afișează 1760 = 10*176
+workerNou2.increaseHourRate(2); //mărește hourRate cu 2
+console.log(workerNou.getSalary()); //afișează 2112 = 12*176
+workerNou2.setTax(18); //setează impozitul pe salariu la 18%
+console.log(workerNou2.getSalaryNetto()); //afișează 2112 – 18% = 1731.84
