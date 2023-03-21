@@ -49,3 +49,11 @@ let workSalTwo = workerTwo.getSalary();
 if (workSalOne > workSalTwo) {
     console.log(`Lucrătorul cu cel mai mare salariu este ${workerOne.name}, cu ${workSalOne - workSalTwo} mai mult`);
 } else console.log((`Lucrătorul cu cel mai mare salariu este ${workerTwo.name}, cu ${workSalTwo - workSalOne} mai mult`))
+
+//Exercitiul 4
+let workerModificat = new Worker('Ion', 'Creangă', 10, 176);
+console.log(workerModificat.getName()); 
+console.log(workerModificat.getSurname());
+console.log(workerModificat.getHourRate()); 
+console.log(workerModificat.getHours()); 
+console.log(workerModificat.getSalary());
