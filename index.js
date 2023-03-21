@@ -83,3 +83,37 @@ workerNou2.increaseHourRate(2); //mărește hourRate cu 2
 console.log(workerNou.getSalary()); //afișează 2112 = 12*176
 workerNou2.setTax(18); //setează impozitul pe salariu la 18%
 console.log(workerNou2.getSalaryNetto()); //afișează 2112 – 18% = 1731.84
+
+//Exercitiul 7
+const workers = [
+    {
+        Name: "Nicoleta",
+        surname: "Guțu",
+        hourRate: 15,
+        hours: 189
+    },
+    {
+        Name: "Vadim",
+        Group: "Pogor",
+        AverageMark: 16,
+        Birthdate: 148
+    },
+    {
+        Name: "Elena",
+        Group: "Prisacari",
+        AverageMark: 17,
+        Birthdate: 208
+    },
+];
+
+const workListContainer = document.getElementById("workListContainer");
+const showList = () => {
+    workListContainer.innerHTML += "";
+    for (const item of workers) {
+        workListContainer.innerHTML += "<br>";
+        for (const key in item) {
+            workListContainer.innerHTML += (`${key}: ${item[key]}<br>`);
+        }
+    }
+}
+showList();
