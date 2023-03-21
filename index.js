@@ -1,4 +1,4 @@
-//Exercitiul 1//
+//Exercitiul 1
 class Worker {
     constructor(name, surname, hourRate, hours) {
         this.name = name;
@@ -39,3 +39,13 @@ console.log(worker.hourRate); //afișează 10
 console.log(worker.hours); //afișează 31
 console.log(worker.getSalary()); //afișează 1760 = 10*176
 
+//Exercitiul 2
+let workerOne = new Worker('Ion', 'Ionescu', 15, 117);
+let workerTwo = new Worker('Andrei', 'Andronescu', 18, 212);
+
+//Exercitiul 3
+let workSalOne = workerOne.getSalary();
+let workSalTwo = workerTwo.getSalary();
+if (workSalOne > workSalTwo) {
+    console.log(`Lucrătorul cu cel mai mare salariu este ${workerOne.name}, cu ${workSalOne - workSalTwo} mai mult`);
+} else console.log((`Lucrătorul cu cel mai mare salariu este ${workerTwo.name}, cu ${workSalTwo - workSalOne} mai mult`))
