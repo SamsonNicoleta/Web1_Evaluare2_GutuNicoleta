@@ -44,6 +44,7 @@ let workerOne = new Worker('Ion', 'Ionescu', 15, 117);
 let workerTwo = new Worker('Andrei', 'Andronescu', 18, 212);
 
 //Exercitiul 3
+console.log("Exercitiul 3")
 let workSalOne = workerOne.getSalary();
 let workSalTwo = workerTwo.getSalary();
 if (workSalOne > workSalTwo) {
@@ -51,9 +52,21 @@ if (workSalOne > workSalTwo) {
 } else console.log((`Lucrătorul cu cel mai mare salariu este ${workerTwo.name}, cu ${workSalTwo - workSalOne} mai mult`))
 
 //Exercitiul 4
+console.log("Exercitiul 4")
 let workerModificat = new Worker('Ion', 'Creangă', 10, 176);
 console.log(workerModificat.getName()); 
 console.log(workerModificat.getSurname());
 console.log(workerModificat.getHourRate()); 
 console.log(workerModificat.getHours()); 
 console.log(workerModificat.getSalary());
+
+//Exercitiul 5
+console.log("Exercitiul 5")
+var workerNou = new Worker('Ion', 'Creangă', 10, 176);
+console.log(workerNou.getName()); // afișează Ion
+console.log(workerNou.getSurname()); // afișează Creangă
+console.log(workerNou.getHourRate()); // afișează 10
+console.log(workerNou.getHours()); // afișează 176
+console.log(workerNou.getSalary()); //afișează 1760 = 10*176
+workerNou.increaseHourRate(2); //mărește hourRate cu 2
+console.log(workerNou.getSalary()); //afișează 2112 = 12*176
